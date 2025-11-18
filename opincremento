@@ -1,6 +1,8 @@
 #include<stdio.h>
 int main(){
     int num1 = 1;
+    int resultado = num1;
+
     printf("Antes do incremento: %d\n", num1);
     //num1++ = num1 + 1
     num1++;
@@ -8,4 +10,13 @@ int main(){
     //num1-- = num1 - 1
     num1--;
     printf("Após o decremento: %d\n", num1);
+    
+    //primeiro atualiza o valor da variável e só depois registra
+    resultado = ++ num1;
+    printf("Após o pré-incremento: número 1: %d - Resultado: %d\n", num1, resultado);
+
+    //primeiro registra o incremento e depois mostra a variável
+    resultado = num1 ++;
+    printf("Após o pós-incremento: número 1: %d - Resultado: %d\n", num1, resultado);
+
 }
