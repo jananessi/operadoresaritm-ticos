@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int a = 10;
+    float b = 3;
+    float resultado = (float) a / b; //a é convertido explicitamente para float
+
+    printf("Resultado: %.2f\n", resultado);
+
+    return 0;
+}
